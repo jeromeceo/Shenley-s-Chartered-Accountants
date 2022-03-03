@@ -1,0 +1,206 @@
+.ccm-toolbar-visible .loader{
+    display:none !important
+}
+.loader:before{
+    -webkit-transform:translate3d(0, 0, 100px);
+    -khtml-transform:translate3d(0, 0, 100px);
+    -moz-transform:translate3d(0, 0, 100px);
+    -ms-transform:translate3d(0, 0, 100px);
+    -o-transform:translate3d(0, 0, 100px);
+    transform:translate3d(0, 0, 100px);
+    background-color:#070707;
+    bottom:0;
+    content:'';
+    display:block;
+    position:fixed;
+    top:0;
+    z-index:100;
+    left:0;
+    width:100vw
+}
+.loaded .loader:before{
+    -webkit-transition:all .25s .25s ease-out;
+    -khtml-transition:all .25s .25s ease-out;
+    -moz-transition:all .25s .25s ease-out;
+    -ms-transition:all .25s .25s ease-out;
+    -o-transition:all .25s .25s ease-out;
+    transition:all .25s .25s ease-out;
+    filter:alpha(opacity=0);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-opacity:0;
+    -khtml-opacity:0;
+    -moz-opacity:0;
+    -ms-opacity:0;
+    -o-opacity:0;
+    opacity:0;
+    visibility:hidden
+}
+.no-js .loader:before{
+    display:none
+}
+.loader [class^="loader-"],.loader [class*=" loader-"]{
+    filter:alpha(opacity=100);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-opacity:1;
+    -khtml-opacity:1;
+    -moz-opacity:1;
+    -ms-opacity:1;
+    -o-opacity:1;
+    opacity:1;
+    -webkit-transform:translate3d(0, 0, 101px);
+    -khtml-transform:translate3d(0, 0, 101px);
+    -moz-transform:translate3d(0, 0, 101px);
+    -ms-transform:translate3d(0, 0, 101px);
+    -o-transform:translate3d(0, 0, 101px);
+    transform:translate3d(0, 0, 101px);
+    display:block;
+    left:50%;
+    height:100px;
+    line-height:100px;
+    margin-left:-100px;
+    margin-top:-50px;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    vertical-align:top;
+    width:200px;
+    z-index:101
+}
+.loaded .loader [class^="loader-"],.loaded .loader [class*=" loader-"]{
+    -webkit-transition:all .25s 0s ease-out;
+    -khtml-transition:all .25s 0s ease-out;
+    -moz-transition:all .25s 0s ease-out;
+    -ms-transition:all .25s 0s ease-out;
+    -o-transition:all .25s 0s ease-out;
+    transition:all .25s 0s ease-out;
+    -webkit-transform:scale(0.9);
+    -khtml-transform:scale(0.9);
+    -moz-transform:scale(0.9);
+    -ms-transform:scale(0.9);
+    -o-transform:scale(0.9);
+    transform:scale(0.9);
+    filter:alpha(opacity=0);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-opacity:0;
+    -khtml-opacity:0;
+    -moz-opacity:0;
+    -ms-opacity:0;
+    -o-opacity:0;
+    opacity:0;
+    visibility:hidden
+}
+.no-js .loader [class^="loader-"],.no-js .loader [class*=" loader-"]{
+    display:none
+}
+.loader .loader-logo{
+    height:200px;
+    line-height:200px;
+    margin-left:-100px;
+    margin-top:-100px;
+    width:200px
+}
+.loader .loader-logo svg{
+    bottom:0;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    overflow:visible
+}
+.main:not(.page-type-home) .loader .loader-logo svg{
+    display:none
+}
+.loader .loader-logo svg .letter{
+    transition:transform 2s cubic-bezier(0.63, 0.06, 0.61, 0.99),opacity 2s cubic-bezier(0.63, 0.06, 0.61, 0.99);
+    opacity:0
+}
+.loader-loading .loader .loader-logo svg .letter{
+    transform:translateY(0rem) !important;
+    opacity:1
+}
+.loader-finished .loader .loader-logo svg .letter{
+    transition:transform 1s cubic-bezier(0.63, 0.06, 0.61, 0.99),opacity 1s cubic-bezier(0.63, 0.06, 0.61, 0.99);
+    transform:translateY(-1rem) !important;
+    opacity:0
+}
+.loader .loader-logo svg .letter-b{
+    transform:translateY(3rem)
+}
+.loader .loader-logo svg .letter-l{
+    transform:translateY(6rem);
+    transition-delay:.3s
+}
+.loader-finished .loader .loader-logo svg .letter-l{
+    transition-delay:.2s
+}
+.loader .loader-logo svg .letter-e{
+    transform:translateY(7.5rem);
+    transition-delay:.45s
+}
+.loader-finished .loader .loader-logo svg .letter-e{
+    transition-delay:.4s
+}
+.loader .loader-logo svg .letter-u{
+    transform:translateY(4rem);
+    transition-delay:.6
+}
+.loader-finished .loader .loader-logo svg .letter-u{
+    transition-delay:.6s
+}
+.loader .loader-logo svg .letter-n{
+    transform:translateY(4.5rem);
+    transition-delay:.75
+}
+.loader-finished .loader .loader-logo svg .letter-n{
+    transition-delay:.8s
+}
+.loader .loader-logo svg .letter-c{
+    transform:translateY(4.25rem);
+    transition-delay:.9s
+}
+.loader-finished .loader .loader-logo svg .letter-c{
+    transition-delay:1s
+}
+.loader .loader-logo svg .letter-i{
+    transform:translateY(7rem);
+    transition-delay:1.5s
+}
+.loader-finished .loader .loader-logo svg .letter-i{
+    transition-delay:1.2s
+}
+.loader .loader-logo svg .letter-s{
+    transform:translateY(8rem);
+    transition-delay:1.65s
+}
+.loader-finished .loader .loader-logo svg .letter-s{
+    transition-delay:1.4s
+}
+.loader .loader-logo svg .letter-small-n{
+    transform:translateY(7rem);
+    transition-delay:1.8s
+}
+.loader-finished .loader .loader-logo svg .letter-small-n{
+    transition-delay:1.6s
+}
+.loader .loader-logo svg .letter-small-dot{
+    transform:translateY(7rem);
+    transition-delay:2s
+}
+.loader-finished .loader .loader-logo svg .letter-small-dot{
+    transition-delay:1.8s
+}
+.loader .loader-logo svg .letter-small-3{
+    transform:translateY(7rem);
+    transition-delay:2.2s
+}
+.loader-finished .loader .loader-logo svg .letter-small-3{
+    transition-delay:2s
+}
+.loader .loader-logo svg .letter-small-2{
+    transform:translateY(7rem);
+    transition-delay:2.4s
+}
+.loader-finished .loader .loader-logo svg .letter-small-2{
+    transition-delay:2.2s
+}
+ 
