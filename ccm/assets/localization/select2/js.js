@@ -1,0 +1,1 @@
+// No select2 translations for en-GB, en

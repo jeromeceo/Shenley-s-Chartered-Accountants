@@ -1,0 +1,11 @@
+/* slider */
+
+.housing-divided .default-slider .bg-image {
+  padding-bottom: 75%;
+}
+
+@media (min-width: 1200px) {
+  .housing-divided-container .bg-image {
+    height: auto;
+  }
+}
