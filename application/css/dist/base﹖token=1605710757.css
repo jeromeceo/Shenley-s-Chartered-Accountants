@@ -12826,6 +12826,9 @@ a.text-dark:hover,a.text-dark:focus{
     content:"\E902"
 }
 
+.home-button button {
+  color: white;
+}
 
 .home-button a {
   color: white;
@@ -27677,6 +27680,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     color:#00000
 }
 .main .btn.g-recaptcha{
+    color: white;
     position:relative
 }
 .main .btn.g-recaptcha:before{
