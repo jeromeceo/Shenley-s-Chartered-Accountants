@@ -12834,6 +12834,27 @@ a.text-dark:hover,a.text-dark:focus{
   color: white;
 }
 
+.home-button-mobile a {
+  color: white;
+}
+
+.home-button-mobile {
+  margin-top: 10%;
+}
+
+
+@media (max-width: 767px) {
+.home-button {
+  display: none;
+}
+}
+
+@media (min-width: 767px) {
+.home-button-mobile {
+  display: none;
+}
+}
+
 .main{
     color: #000000ad;
     font-family: 'Avenir' ,Arial,Helvetica,sans-serif;
